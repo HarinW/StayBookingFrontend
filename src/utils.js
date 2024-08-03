@@ -4,7 +4,7 @@ const domain = "https://staybooking-unkgmh22ma-uw.a.run.app";
 // 和后端通信
 export const login = (credential) => {
   const loginUrl = `${domain}/auth/login`;
-  fetch(loginUrl, {
+  return fetch(loginUrl, {
     method: "POST", // POST method
     headers: {
       // request header
